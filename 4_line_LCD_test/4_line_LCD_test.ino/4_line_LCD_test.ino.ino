@@ -6,28 +6,7 @@ SCL and SDA pullup resistors already on LCD
 
 */
 #include <Wire.h>
-
-#define I2C_ADDRESS        0x28  //LCD I2C address  0x28??? It should be 0x50 
-#define DISPLAY_ON         0x41  //DISPLAY ON
-#define DISPLAY_OFF        0x42  //DISPLAY OFF
-#define SET_CURSOR         0x45  //SET CURSOR
-#define CURSOR_HOME        0x46  //CURSOR HOME
-#define MOVE_CURSOR_LEFT   0x49  //MOVE CURSOR LEFT
-#define MOVE_CURSOR_RIGHT  0x4A  //MOVE CURSOR RIGHT
-#define BLINK_CURSOR_ON    0x4B  //BLINK CURSOR ON
-#define BLINK_CURSOR_OFF   0x4C  //BLINK CURSOR OFF
-#define BACKSPACE          0x4E  //BACKSPACE
-#define CLEAR_SCREEN       0x51  //CLEAR SCREEN
-#define SET_CONTRAST       0x52  //SET CONTRAST
-#define SET_BACKLIGHT      0x53  //SET BACKLIGHT
-#define MOVE_DISP_LEFT     0x55  //MOVE DISPLAY LEFT
-#define MOVE_DISP_RIGHT    0x56  //MOVE DISPLAY RIGHT
-#define DISP_I2C_ADDR      0x72  //DISPLAY I2C ADDRESS
-
-#define LINE1 0x00
-#define LINE2 0x40
-#define LINE3 0x14
-#define LINE4 0x54
+#include"4_line_LCD_i2c.h"
 
 void setup() 
 {
